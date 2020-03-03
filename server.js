@@ -19,6 +19,6 @@ var app = express();
 app.use('/graphql', express_graphql ({
 	schema: schema,
 	rootValue: root,
-	graphql: true
+	graphiql: true
 }));
 app.listen(4000, () => console.log('Express GraphQL Server now Running On localhost:4000/graphql'));
